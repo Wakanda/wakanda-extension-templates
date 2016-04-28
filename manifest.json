@@ -1,0 +1,22 @@
+{
+    "extension": {
+        "name": "wakanda-extension-templates",
+        "version": "1.0.0",
+        "minStudioVersion": "1.1.0",
+        "description": "An internal extension to create new solutions and projects from templates.",
+        "icon": "icon.png",
+        "actions": [
+            {
+                "name": "createSolution",
+                "title": "createSolution",
+                "trigger": [ { "event": "onSolutionWillCreate" } ]
+            },
+            {
+                "name": "createProject",
+                "title": "createProject",
+                "trigger": [ { "event": "onProjectWillCreate" } ]
+            }
+        ],
+        "lifetime": "application_lifetime"
+    }
+}
