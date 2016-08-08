@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Project</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./css/dialog.css"  rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <input class="form__input" type="hidden" name="projectTemplateName" value="default">
+        <input class="form__input" type="hidden" name="withPrototype" value="true">
+        <div class="form__input-group">
+          <input id="solutionProjectName" class="form__input form__input-bold" type="text" name="name" value="" placeholder="Project name" />
+        </div>
+        <div class="form__input-group">
+          <input disabled class="form__input form__input--file" type="text" name="path" value=""/>
+          <button class="form__input form__input--button box">Edit path</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="form__group">
+          <input class="form__toggle-input" disabled checked type="checkbox" name="backend">
+          <label class="form__toggle-input-label"></label>
+          <div class="box">
+            <div class="form__project-part">
+              <figure class="form__icon form__icon-backend"></figure>
+              <label class="form__label">backend</label>
+              <p class="form__template-preview-desc">Pre-configured backend components, in particular: a Wakanda JavaScript Server, a Wakanda Database and a Data Abstraction Layer to access data from Wakanda Database, remote SQL databases and external services.
+ <a href="http://wakanda.github.io/wakanda-server-doc/#/doc/overview" target="_blank">Learn more »</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <input class="form__toggle-input" type="checkbox" name="mobile" checked>
+          <label class="form__toggle-input-label"></label>
+          <div class="box">
+            <div class="form__project-part">
+              <figure class="form__icon form__icon-mobile"></figure>
+              <label class="form__label">mobile</label>
+              <p>A completely integrated stack to build hybrid mobile apps with <strong>Ionic 1 and Ionic 2</strong>. Choose a template:</p>
+            </div>
+            <div id="mobileTemplates" class="form__template">
+              <select class="form__select form__select--dropdown" name="mobileTemplateName"></select>
+              <div class="form__template-input">
+                <a href="#" class="form__template-input-arrow form__template-input-arrow--left"></a>
+                <a href="#" class="form__template-input-arrow form__template-input-arrow--right"></a>
+              </div>
+              <div class="form__template-preview"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <input class="form__toggle-input" type="checkbox" name="web" checked>
+          <label class="form__toggle-input-label"></label>
+          <div class="box">
+            <div class="form__project-part">
+              <figure class="form__icon form__icon-web"></figure>
+              <label class="form__label">web</label>
+              <p>A support of the JavaScript frameworks <strong>Angular 1 and Angular 2</strong> to build web apps. Choose a template:</p>
+            </div>
+            <div id="webTemplates" class="form__template">
+              <select class="form__select form__select--dropdown" name="webTemplateName"></select>
+              <div class="form__template-input">
+                <a href="#" class="form__template-input-arrow form__template-input-arrow--left"></a>
+                <a href="#" class="form__template-input-arrow form__template-input-arrow--right"></a>
+              </div>
+              <div class="form__template-preview"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button class="dialog__button dialog__button--cancel">Cancel</button>
+      <button class="dialog__button dialog__button--submit">Create</button>
+    </footer>
+    <script src="./js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="./js/dialog.js"></script>
+  </body>
+</html>

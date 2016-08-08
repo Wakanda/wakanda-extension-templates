@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution>
+  $(projectPath)
   <file path="./settings.waSettings">
     <tag name="settings"/>
   </file>
