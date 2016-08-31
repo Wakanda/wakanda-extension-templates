@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "angular": "~1.5.7",
-    "angular-wakanda": "~1.1.4",
+    "angular-wakanda": "~1.1.5",
     "bootstrap-css": "~3.3.6"
   }
 }

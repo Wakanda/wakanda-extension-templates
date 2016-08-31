@@ -1,6 +1,6 @@
 {
   "name": "angular-wakanda",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "keywords": [
     "angular",
     "angular.js",
@@ -18,14 +18,13 @@
   "dependencies": {
     "angular": "^1.2.6"
   },
-  "_release": "1.1.4",
+  "_release": "1.1.5",
   "_resolution": {
     "type": "version",
-    "tag": "v1.1.4",
-    "commit": "26415724d08f210d5327b6ec56be63bc72b091b4"
+    "tag": "v1.1.5",
+    "commit": "eac126161c43af0794002ed39a6de61eeca630f8"
   },
   "_source": "https://github.com/Wakanda/bower-angular-wakanda.git",
-  "_target": "^1.1.4",
-  "_originalSource": "angular-wakanda",
-  "_direct": true
+  "_target": "~1.1.5",
+  "_originalSource": "angular-wakanda"
 }
