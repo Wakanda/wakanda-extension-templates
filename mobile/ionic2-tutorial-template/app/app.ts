@@ -18,8 +18,8 @@ class MyApp {
   pages: Array<{title: string, component: any}>;
 
   constructor(
-    private platform: Platform,
-    private menu: MenuController,
+    public platform: Platform,
+    public menu: MenuController,
     public wakanda: Wakanda
   ) {
     this.initializeApp();
@@ -29,7 +29,6 @@ class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];
-
     //this.wakandaClientVersion = this.wakanda.wakandaClientVersion;
   }
 
