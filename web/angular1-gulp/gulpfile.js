@@ -50,12 +50,10 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('images', function() {
-  return gulp.src('assets/img/**/*')
+gulp.task('build', ['clean'], function() {
+  gulp.src('assets/img/**/*')
     .pipe(gulp.dest('dist/assets/img'));
-});
 
-gulp.task('build', ['clean', 'images'], function() {
 	return gulp.src('*.html')
     	.pipe(useref())
     	.pipe(gulpIf('*.js', uglify()))
