@@ -6,8 +6,8 @@ export class Wakanda {
   private _catalog;
 
   constructor() {
-    //this._client = new WakandaClient('http://127.0.0.1:8081');
-    this._client = new WakandaClient();
+    //this._client = new WakandaClient({ host: 'http://127.0.0.1:8081' });
+    this._client = new WakandaClient({});
     this._catalog = null;
   }
 
