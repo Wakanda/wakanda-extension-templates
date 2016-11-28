@@ -1,7 +1,7 @@
 {
     "extension": {
         "name": "wakanda-extension-templates",
-        "version": "1.1.0",
+        "version": "1.1.2",
         "minStudioVersion": "1.1.0",
         "description": "An internal extension to create new solutions and projects from templates.",
         "icon": "icon.png",
