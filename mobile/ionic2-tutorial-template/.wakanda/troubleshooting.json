@@ -30,6 +30,14 @@
           "dependency": "ionic 2",
           "description": ["<h4>What is Ionic?</h4><p><strong>Ionic</strong> offers you a command line layer to build mobile hybrid apps using <strong>HTML5</strong> and <strong>AngularJS</strong>. Ionic also provides you with a complete front-end stack that focuses on building a cross-platform mobile user experience.</p>", "<h4>Installation</h4><p>To install <strong>Ionic 2</strong>, use the <strong>Node Package Manager (npm)</strong> that is provided by Node.js:</p> <ol><li>Open the Terminal.</li><li><div>Run this command:</div><pre><code>npm install -g ionic@beta</code></pre><p><strong>NOTE</strong>: If <strong>NPM</strong> command <u>returns an error</u>, run: <pre><code>sudo npm install -g ionic@beta</code></pre></li></ol><p><strong>You must restart Wakanda Studio after completing this step.</strong></p>", "You installed Ionic, but Wakanda Studio has not found it? <a href='#/issues/3'>Solve this issue</a>"]
         }, {
+          "name": "Install ios-sim",
+          "dependency": "ios-sim",
+          "description": ["<h4>What is ios-sim?</h4><p><strong>ios-sim</strong> is a command-line utility that launches an <strong>iOS</strong> application on the <strong>iOS Simulator</strong>.</p>", "<h4>Installation</h4><p>To install <strong>ios-sim</strong>, use the <strong>Node Package Manager (npm)</strong> that is provided by Node.js:</p> <ol><li>Open the Terminal.</li><li><div>Run this command:</div><pre><code>npm install -g ios-sim</code></pre><p><strong>NOTE</strong>: If <strong>NPM</strong> command <u>returns an error</u>, run: <pre><code>sudo npm install -g ios-sim</code></pre></li></ol>"]
+        }, {
+          "name": "Install ios-deploy",
+          "dependency": "ios-deploy",
+          "description": ["<h4>What is ios-deploy?</h4><p>With <strong>ios-deploy</strong> you can install and debug <strong>iOS</strong> apps without using <strong>Xcode</strong>.</p>", "<h4>Installation</h4> <p>To install <strong>ios-deploy</strong>, use the <strong>Node Package Manager (npm)</strong> that is provided by Node.js:</p> <ol> <li>Open the Terminal.</li> <li> <div>Run this command:</div><pre><code>npm install -g ios-deploy</code></pre> <p><strong>NOTE</strong>: If <strong>NPM</strong> command <u>returns an error</u>, run: <pre><code>sudo npm install -g ios-deploy</code></pre> <p>And, if you are on OS X 10.11 El Capitan or greater, you may need to add the <strong>--unsafe-perm=true</strong> flag when running <strong>npm install</strong> or else it will fail.</p> </li></ol>"]
+        }, {
           "name": "End",
           "description": ["<h4>Additional Information</h4><p>If you have any further questions, please contact us at <a target=\"_blank\" href=\"mailto:support@wakanda.io\">support@wakanda.io</a>.</p>"]
         }]

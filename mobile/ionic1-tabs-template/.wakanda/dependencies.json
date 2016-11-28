@@ -71,6 +71,32 @@
         }
       }
     },
+    "ios-sim": {
+      "name": "ios-sim",
+      "text": "Install ios-sim",
+      "optional": true,
+      "os": {
+        "mac": true
+      },
+      "command": "ios-sim --version",
+      "troubleshooting": {
+        "app": "ios-app",
+        "step": 5
+      }
+    },
+    "ios-deploy": {
+      "name": "ios-deploy",
+      "text": "Install ios-deploy",
+      "optional": true,
+      "os": {
+        "mac": true
+      },
+      "command": "ios-deploy --version",
+      "troubleshooting": {
+        "app": "ios-app",
+        "step": 6
+      }
+    },
     "java": {
       "name": "Java SDK",
       "text": "Install Java SDK",
