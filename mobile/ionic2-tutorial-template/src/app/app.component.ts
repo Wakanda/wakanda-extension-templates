@@ -1,16 +1,21 @@
-import {Component, ViewChild} from '@angular/core';
-import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
-import {StatusBar} from 'ionic-native';
-import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
-import {ListPage} from './pages/list/list';
-import {Wakanda} from './wakanda';
+import { Component, ViewChild } from '@angular/core';
+
+import { Platform, MenuController, Nav } from 'ionic-angular';
+
+import { StatusBar } from 'ionic-native';
+
+import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { ListPage } from '../pages/list/list';
+
+import { Wakanda } from '../wakanda';
+
 
 
 @Component({
-  templateUrl: 'build/app.html',
+  templateUrl: 'app.html',
   providers: [ Wakanda ]
 })
-class MyApp {
+export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
@@ -29,7 +34,10 @@ class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];
-    //this.wakandaClientVersion = this.wakanda.wakandaClientVersion;
+
+    // this.wakanda.catalog.then(ds => {
+    //   console.log(ds);
+    // });
   }
 
   initializeApp() {
@@ -47,5 +55,3 @@ class MyApp {
     this.nav.setRoot(page.component);
   }
 }
-
-ionicBootstrap(MyApp);

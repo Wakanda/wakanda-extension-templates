@@ -2,5 +2,11 @@
   "name": "$(projectName)",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies" : [
+    {
+        "path": "/rest",
+        "proxyUrl": "http://127.0.0.1:8081/rest"
+    }
+  ]
 }
